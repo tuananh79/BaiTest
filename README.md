@@ -1,2 +1,3 @@
 - template reponsive (không sử dụng bootstrap)
 - npm install --save-exact sass@1.43.4
+- width: 676px
