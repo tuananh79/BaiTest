@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+@font-face {
+    font-family: monR;
+    src        : url('../resources/font/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: monE;
+    src        : url('../resources/font/Montserrat-ExtraBold.ttf');
+}
+
+.happened {
+    padding-top   : 7%;
+    width         : 100%;
+    position      : relative;
+    overflow      : hidden;
+    padding-bottom: 20%;
+
+    .title {
+
+        width         : 30%;
+        text-align    : center;
+        display       : flex;
+        flex-direction: column;
+        margin        : auto;
+
+        h1 {
+            font-size  : 15px;
+            font-family: monE;
+        }
+
+        label {
+            margin-top   : 5%;
+            font-size    : 5px;
+            font-family  : monR;
+            margin-bottom: 5%;
+        }
+
+        button {
+            margin        : auto;
+            cursor        : pointer;
+            border        : 1.5px solid black;
+            border-radius : 3%;
+            font-family   : monE;
+            width         : 33%;
+            font-size     : 8px;
+            padding-top   : 1.5%;
+            padding-bottom: 1.5%;
+        }
+
+        img {
+            width  : 10%;
+            display: none;
+
+        }
+    }
+
+    .window {
+
+        width     : 60%;
+        margin    : auto;
+        margin-top: 3%;
+        z-index   : 5;
+        position  : relative;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .pink-b {
+
+        img.pink {
+            position: absolute;
+            width   : 33%;
+            right   : -11%;
+            bottom  : 13.5%;
+            z-index : 4;
+        }
+
+        img.black {
+            position: absolute;
+            width   : 15%;
+            right   : -7.5%;
+            bottom  : 43%;
+
+        }
+    }
+
+    .heart-w {
+        position      : absolute;
+        top           : 9.5%;
+        right         : -22%;
+        display       : flex;
+        flex-direction: column;
+        width         : 40%;
+
+        img.heart {
+            position: absolute;
+            width   : 14%;
+            bottom  : -40%;
+            left    : -8%;
+        }
+
+        img.w {
+
+            width: 20%;
+        }
+    }
+
+    .eh {
+        position: absolute;
+        left    : 11.5%;
+        bottom  : 14.5%;
+
+        img.h2 {
+
+            width        : 33%;
+            margin-left  : 14.5%;
+            margin-bottom: 15%;
+        }
+
+        img.e {
+            position: absolute;
+            width   : 90%;
+            left    : 43%;
+            top     : 50%;
+            z-index : 2;
+        }
+    }
+
+    .photo {
+        width  : 100%;
+        z-index: 1;
+
+
+        img.h {
+            width   : 7%;
+            position: absolute;
+            top     : 0;
+            left    : 12.8%;
+        }
+
+        img.drink {
+            position: absolute;
+            width   : 25%;
+            left    : -11%;
+            top     : 21%;
+        }
+
+
+
+    }
+}
+
+@media only screen and(max-width: 600px) {
+    .happened {
+        .title {
+            h1 {
+                font-size: 10px !important;
+            }
+
+            label {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+
+            img {
+                margin : auto;
+                display: block !important;
+            }
+        }
+    }
+}

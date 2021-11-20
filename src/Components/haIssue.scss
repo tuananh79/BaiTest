@@ -1,0 +1,276 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: monB;
+    src        : url('../resources/font/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: monE;
+    src        : url('../resources/font/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: notoL;
+    src        : url('../resources/font/NotoSansKR-Light.otf');
+}
+
+.row {
+    padding        : 0;
+    margin         : 0;
+    width          : 100%;
+    justify-content: center;
+}
+
+.l-12 {
+    margin : 0;
+    padding: 0;
+}
+
+.cl {
+    background-color: #FF5400 !important;
+}
+
+.HaIssue {
+    width           : 100%;
+    padding-bottom  : 2%;
+    background-color: #FCD426;
+    position        : relative;
+
+    .title {
+
+        line-height   : 2;
+        text-align    : center;
+        width         : 34%;
+        display       : flex;
+        flex-direction: column;
+        margin        : auto;
+        padding-top   : 7%;
+
+        h1 {
+            font-size    : 15px;
+            margin-bottom: 3%;
+            font-family  : monB;
+        }
+
+        label {
+            font-family  : notoL;
+            font-size    : 5px;
+            margin-bottom: 8%;
+        }
+
+        button {
+            margin        : auto;
+            cursor        : pointer;
+            border        : 1.5px solid black;
+            border-radius : 3%;
+            font-family   : monE;
+            width         : 29%;
+            font-size     : 8px;
+            padding-top   : 1.5%;
+            padding-bottom: 1.5%;
+        }
+
+        img {
+            width  : 10%;
+            display: none;
+
+        }
+    }
+
+    .brand.row {
+        width  : 100%;
+        padding: 0;
+        margin : 0;
+
+        padding-top: 1%;
+
+        .brd {
+            width           : 133.5px;
+            text-align      : center;
+            padding-top     : 3%;
+            border          : 0.66px solid black;
+            margin          : 0;
+            padding-bottom  : -5%;
+            background-color: #FF5400;
+            position        : relative;
+            margin-top      : 5%;
+            margin-bottom   : 5%;
+
+            .coin {
+                position: absolute;
+                bottom  : -18%;
+                right   : -50%;
+                z-index : 5;
+
+                img.c {
+                    width: 30%;
+                }
+            }
+
+            h1 {
+                padding-top: 10%;
+                display    : flex;
+                margin-left: 30%;
+                width      : 10%;
+                clear      : both;
+                font-size  : 100%;
+
+            }
+
+            img {
+                margin-top: 10%;
+                width     : 30%;
+            }
+        }
+
+        .brd1 {
+            position        : relative;
+            text-align      : center;
+            padding         : 0;
+            border          : 0.66px solid black;
+            background-color: black;
+            margin-top      : 5%;
+            margin-bottom   : 5%;
+
+            .hot {
+                position: absolute;
+                width   : 50%;
+                top     : -6%;
+                left    : -2%;
+
+                img.h {
+                    width : 40px;
+                    height: 20px;
+                }
+            }
+
+            .lol {
+                position: absolute;
+                bottom  : -10%;
+                left    : -20%;
+
+                img.l {
+                    width : 40px;
+                    height: 25px;
+                }
+            }
+
+
+            h1 {
+                color    : #fff;
+                font-size: 90%;
+                padding  : 2% 0;
+            }
+
+
+
+            img {
+                width        : 133.5px;
+                height       : 140px;
+                margin-left  : -0.5px;
+                margin-bottom: -3%;
+
+            }
+        }
+    }
+
+    .iconB {
+        width   : 10%;
+        position: absolute;
+        top     : 5%;
+        right   : 0;
+
+        img.o5 {
+            width         : 45%;
+            margin-left   : 20%;
+            padding-bottom: 10%;
+        }
+
+        img.o3 {
+            width: 70%;
+        }
+    }
+
+
+
+}
+
+@media only screen and(min-width: 1024px) {
+    .HaIssue {
+        .title {}
+
+        .brand {
+            display       : flex;
+            flex-direction: row;
+
+            .brd {
+                width: 13% !important;
+
+                .coin {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+
+            .brd1 {
+                width: 13% !important;
+
+                .hot {
+                    img {
+                        display: none;
+                    }
+                }
+
+                .lol {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 600px) {
+    .HaIssue {
+        .title {
+            h1 {
+                font-size: 8px !important;
+            }
+
+            label {
+                display: none;
+            }
+
+            button {}
+        }
+
+
+    }
+}
+
+@media only screen and(max-width: 330px) {
+    .HaIssue {
+        .title {
+            h1 {}
+
+            label {}
+
+            button {
+                display: none;
+            }
+
+            img {
+                margin : auto;
+                display: block;
+            }
+        }
+
+
+    }
+}

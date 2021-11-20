@@ -1,0 +1,85 @@
+* {
+    margin : 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: monE;
+    src        : url('../resources/font/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: monR;
+    src        : url('../resources/font/Montserrat-Regular.ttf');
+}
+
+.banner.grid.wide.l-12 {
+    margin-bottom: -4px;
+
+    img {
+        width: 100%;
+
+    }
+}
+
+.wh {
+    background-image: url('../assets/images/introduction-bg.png');
+    background-size : cover;
+    margin          : 0px 0px;
+    display         : flex;
+    align-items     : center;
+    color           : #fff;
+
+    .title {
+        width      : 50%;
+        padding    : 8% 0px 8% 9%;
+        line-height: 0.8;
+
+        h1 {
+
+            font-family  : monE;
+            font-size    : 20px;
+            margin-bottom: 20px;
+
+        }
+
+        label {
+            font-family: monR;
+            font-size  : 8px;
+
+        }
+
+        img {
+            width  : 10%;
+            display: none;
+
+        }
+
+    }
+}
+
+@media only screen and(max-width: 550px) {
+    .wh {
+        .title {
+            h1 {
+                font-size  : 10px;
+                line-height: 1;
+            }
+
+            label {
+                display: none;
+            }
+
+            img {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 397px) {
+    .banner {
+        margin-bottom: -1.5% !important;
+    }
+}

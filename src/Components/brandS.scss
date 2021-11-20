@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+@font-face {
+    font-family: monB;
+    src        : url('../resources/font/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: monE;
+    src        : url('../resources/font/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: notoL;
+    src        : url('../resources/font/NotoSansKR-Light.otf');
+}
+
+.brands {
+    width           : 100%;
+    background-color: #0165BC;
+    padding-bottom  : 8%;
+    position        : relative;
+    overflow        : hidden;
+
+    .title {
+        color      : #FCD426;
+        width      : 31%;
+        text-align : center;
+        margin     : 0px auto 0px auto;
+        line-height: 0.5;
+        margin-top : 9%;
+
+        h1 {
+            font-family  : monB;
+            font-size    : 15px;
+            margin-bottom: 5%;
+        }
+
+        label {
+            font-family: notoL;
+            font-size  : 5px;
+        }
+
+        img {
+            margin : auto;
+            width  : 10%;
+            display: none;
+        }
+    }
+
+    .window {
+        z-index    : 5;
+        padding-top: 3.5%;
+        overflow   : hidden;
+        width      : 70%;
+        margin     : auto;
+        position   : relative;
+
+        img {
+            width : 90%;
+            margin: auto;
+        }
+
+        .titl {
+            position      : absolute;
+            display       : flex;
+            flex-direction: column;
+            width         : 38%;
+            float         : right;
+            top           : 33%;
+            right         : 8%;
+
+            h1 {
+                font-family   : monE;
+                padding-bottom: 5%;
+                font-size     : 10px;
+            }
+
+            label {
+                font-family   : notoL;
+                font-size     : 5px;
+                padding-bottom: 5%;
+            }
+
+            button {
+                cursor        : pointer;
+                border        : 1.5px solid black;
+                border-radius : 3%;
+                font-family   : monE;
+                width         : 37%;
+                font-size     : 8px;
+                padding-top   : 1.5%;
+                padding-bottom: 1.5%;
+            }
+
+            img {
+                width  : 5%;
+                display: none;
+
+            }
+        }
+
+    }
+
+    .photobackgr {
+
+
+        .plan {
+
+            right   : 11%;
+            position: absolute;
+            width   : 10%;
+            top     : 5%;
+
+
+            img.o2 {
+                width: 65%;
+
+            }
+
+            img.o3 {
+                position: absolute;
+                top     : 21%;
+                left    : 33%;
+                width   : 65%;
+            }
+        }
+
+        .book {
+            width   : 50%;
+            position: absolute;
+            bottom  : 21%;
+
+            img.o6 {
+                width: 20%;
+            }
+
+            img.o7 {
+                width: 20%;
+            }
+        }
+
+        .calendar {
+            width   : 10%;
+            position: absolute;
+            bottom  : 22%;
+            right   : 2%;
+
+            img.o4 {
+                width        : 160%;
+                margin-bottom: 60%;
+            }
+
+            img.o5 {
+                bottom  : 0;
+                right   : -30%;
+                position: absolute;
+                width   : 203%;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and(max-width:615px) {
+    .brands {
+        .title {
+            h1 {
+                font-size  : 5px;
+                line-height: 1;
+
+            }
+
+            label {
+                display: none;
+            }
+
+            img {
+                display: block;
+            }
+        }
+
+        .window {
+            img {}
+
+            .titl {
+                h1 {}
+
+                label {
+                    display: none;
+                }
+
+                button {
+                    display: none;
+                }
+
+                img {
+                    display: block;
+                }
+
+            }
+        }
+    }
+}

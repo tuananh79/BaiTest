@@ -1,0 +1,189 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: monB;
+    src        : url('../resources/font/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: monR;
+    src        : url('../resources/font/Montserrat-Regular.ttf');
+}
+
+.roww {
+    display       : flex;
+    flex-direction: column;
+
+}
+
+
+.grid.wide.prod {
+    width          : 90%;
+    margin-top     : 6.7%;
+    display        : flex;
+    justify-content: center;
+    padding-bottom : 8%;
+    flex-direction : column;
+
+    .button {
+        margin         : 7% auto 0 auto;
+        width          : 39.5%;
+        display        : flex;
+        justify-content: center;
+
+        img {
+            width  : 10%;
+            display: none;
+
+        }
+
+        button {
+
+            cursor        : pointer;
+            border        : 1.5px solid black;
+            border-radius : 3%;
+            font-family   : monE;
+            width         : 28.3%;
+            font-size     : 8px;
+            padding-top   : 1.5%;
+            padding-bottom: 1.5%;
+        }
+
+    }
+
+    .row {
+        margin         : 0;
+        padding        : 0;
+        width          : 100%;
+        justify-content: center;
+
+
+        .prd {
+            background-color: #f6f6f6;
+            margin-top      : 3%;
+
+
+            img {
+                padding: 0;
+                margin : 0;
+                width  : 100px;
+                height : 100px;
+            }
+
+            h1 {
+                font-family   : monB;
+                padding-top   : 4%;
+                padding-bottom: 4%;
+                font-size     : 6px;
+                width         : 100%;
+            }
+
+
+
+            .price {
+                width         : 100%;
+                display       : flex;
+                flex-direction: row;
+                position      : relative;
+                padding-bottom: 3%;
+
+                label {
+                    font-size: 5px;
+                }
+
+                .icon {
+                    display    : flex;
+                    width      : 15%;
+                    position   : absolute;
+                    right      : 0;
+                    font-family: monR;
+
+                    img {
+                        margin-top: 0.6px;
+                        width     : 5px;
+                        height    : 5px;
+                    }
+
+                    label {
+                        margin-right: 7px;
+                        width       : 10%;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(min-width: 1024px) {
+    .prod {
+        button .row {
+
+
+            .prd.col.l-2-4 {
+                padding-left : 0 !important;
+                padding-right: 0 !important;
+                width        : 10% !important;
+
+                img {}
+
+                h1 {
+                    width: 70% !important;
+                }
+
+                .price {
+
+
+                    label {}
+
+                    .icon {
+                        img {}
+
+                        label {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 300px) {
+    .prod {
+        .button {
+            button {
+                display: none;
+            }
+
+            img {
+                display: block !important;
+            }
+        }
+
+        .row {
+
+
+            .prd.col.l-2-4 {
+
+
+                img {}
+
+                h1 {}
+
+                .price {
+
+
+                    label {}
+
+                    .icon {
+                        img {}
+
+                        label {}
+                    }
+                }
+            }
+        }
+    }
+}

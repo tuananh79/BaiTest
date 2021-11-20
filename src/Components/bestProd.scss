@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+.row {
+    width: 100%;
+
+}
+
+@font-face {
+    font-family: monB;
+    src        : url('../resources/font/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: monR;
+    src        : url('../resources/font/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: monE;
+    src        : url('../resources/font/Montserrat-ExtraBold.ttf');
+}
+
+.bestprod {
+    background-image: url('../assets/images/bes-bg.png');
+    background-size : cover;
+
+
+    .content {
+        .title {
+            margin     : 0 auto;
+            text-align : center;
+            padding-top: 7%;
+            color      : #F96400;
+
+            h1 {
+                font-family: monB;
+                font-size  : 20px;
+                padding    : 0px 0px 15px 0px;
+            }
+
+            line-height: 0.8;
+
+            label {
+                font-family: monR;
+                margin-top : 10px;
+                font-size  : 8px;
+                line-height: 0.5;
+            }
+
+            width: 43%;
+
+            img {
+                width  : 10%;
+                display: none;
+
+            }
+        }
+
+        .photo.row {
+
+            width          : 100%;
+            margin-top     : 3.8%;
+            display        : flex;
+            justify-content: center;
+
+            .imgs {
+                position     : relative;
+                margin-bottom: 11%;
+
+                .icon {
+
+                    img {
+                        position: absolute;
+                        height  : 35px;
+                        width   : 35px;
+                        top     : -8%;
+
+                    }
+                }
+
+                .sug {
+                    z-index         : 2;
+                    width           : 120px;
+                    height          : 23px;
+                    border          : 2px solid black;
+                    border-radius   : 3%;
+                    display         : flex;
+                    flex-direction  : row;
+                    position        : absolute;
+                    bottom          : -5%;
+                    left            : 11%;
+                    background-color: #fff;
+
+                    img {
+                        width  : 22px;
+                        height : 22px;
+                        padding: 0 0 0 25px;
+                    }
+
+                    p {
+                        font-family : monE;
+                        font-size   : 6px;
+                        width       : 50%;
+                        padding-left: 10px;
+                        margin-top  : 3px;
+                    }
+                }
+
+                img {
+                    height: 180px;
+                    width : 160px;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 620px) {
+    .bestprod {
+        .content {
+            .title {
+                h1 {}
+
+                label {
+                    display: none;
+                }
+
+                img {
+                    margin : auto;
+                    display: block;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .photo {
+        .imgs {
+
+
+            .sug {}
+
+            .icon {
+                img {
+                    left: 0%;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and(min-width: 1024px) {
+    .photo {
+        .imgs {
+
+            display        : flex !important;
+            justify-content: center !important;
+
+            .sug {
+                left: 31% !important;
+            }
+
+            .icon {
+                img {
+                    left: 25%;
+                }
+            }
+        }
+
+    }
+}

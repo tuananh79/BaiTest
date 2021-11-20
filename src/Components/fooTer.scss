@@ -1,0 +1,164 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.row {
+    display       : flex;
+    flex-direction: row;
+}
+
+.if {
+    margin-left: 5%;
+}
+
+.footer {
+    width      : 100%;
+    line-height: 0.5;
+    margin-top : 5% !important;
+
+    .row {
+        padding        : 0;
+        margin         : 0;
+        display        : flex;
+        justify-content: space-around;
+
+        .info {
+            width      : 40%;
+            margin-left: 10%;
+
+        }
+
+        .whath {
+            width: 20%;
+            float: left;
+
+
+        }
+
+        h1 {
+            font-size: 4px;
+        }
+
+        a {
+            font-size: 3px;
+        }
+    }
+
+    .dat {
+        margin-top    : 4%;
+        line-height   : 1;
+        font-style    : oblique;
+        display       : flex;
+        flex-direction: row;
+        margin-left   : 7.5%;
+
+        .copyright {
+            opacity  : 0.5;
+            font-size: 4px;
+            width    : 55%;
+        }
+
+        .icon {
+            width      : 20%;
+            margin-left: 22%;
+
+            img {
+                width      : 10%;
+                margin-left: 15%;
+            }
+        }
+    }
+
+}
+
+@media only screen and(min-width: 1024px) {
+    .footer {
+        .row {
+            display        : flex;
+            justify-content: space-around !important;
+
+            .info {
+                width      : 40%;
+                margin-left: 10%;
+
+            }
+
+            .whath {
+                width: 20%;
+                float: left;
+
+
+            }
+
+            h1 {
+                font-size: 8px;
+            }
+
+            a {
+                font-size: 7px;
+            }
+        }
+
+        .dat {
+            .copyright {
+                font-size: 8px;
+            }
+
+            padding-bottom: 5%;
+        }
+    }
+}
+
+@media only screen and(max-width: 400px) {
+    .footer {
+        .row {
+
+            display       : flex;
+            flex-direction: column;
+
+            line-height: 0.2;
+
+            .info {
+                text-align: center;
+                margin    : 0 auto 0 auto;
+                display   : none;
+
+            }
+
+            .whath {
+                display   : none;
+                text-align: center;
+                margin    : auto;
+            }
+
+            h1 {
+                display: none;
+            }
+
+            a {
+                display: none;
+            }
+
+            .account {}
+
+            .help {}
+        }
+
+        .dat {
+            display       : flex;
+            flex-direction: column;
+
+            .copyright {
+                margin    : auto;
+                text-align: center;
+            }
+
+            padding-bottom: 5%;
+
+            .icon {
+                margin: auto;
+            }
+        }
+    }
+}
